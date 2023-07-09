@@ -9,7 +9,12 @@ import { MyAccount } from './pages/MyAccount';
 import { Newreserv } from './pages/NewReservation';
 import { Reservation } from './pages/Reservation';
 import { Calend } from './pages/ReservationCaled';
-
+import { Hello } from './pages/Hello';
+// import { Sorpresa } from './pages/Surprise';
+import { Maodalpage } from './pages/Modalpage';
+import { ModalCalend } from './pages/Modalfecha';
+import { Deletmodal } from './pages/Modaldelet';
+import { Checkmodal } from './pages/Modalchek';
 const router = createBrowserRouter ([
   
   //Rutas de navegacion
@@ -37,7 +42,27 @@ const router = createBrowserRouter ([
   },
   {
     path: "/Reservacionescalendario",
-    element: <Calend/>
+    element: <Calend/>,
+  },
+  {
+    path: "/Hello",
+    element: <Hello/>,
+  },
+  {
+    path: "/Ventamodal",
+    element: <Maodalpage/>,  
+  },
+  {
+    path: "/ModalCaled",
+    element: <ModalCalend/>
+  },
+  {
+    path: "/Modaldelet",
+    element: <Deletmodal/>,
+  },
+  {
+    path:"/Modalcheck",
+    element: <Checkmodal/>,
   },
 ]);
 
